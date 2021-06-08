@@ -1,42 +1,32 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+.Contenedor-Quienes-Somos, .Contenedor-Menu{
+    background-color:  #CAB08F;
 }
+.zoom{
+    transition: 1s ease;
+     -moz-transition: 1s ease; /* Firefox */
+     -webkit-transition: 1s ease; /* Chrome - Safari */
+     -o-transition: 1s ease; /* Opera */
+  }
+  .zoom:hover{
+    transform : scale(1.1);
+    -moz-transform : scale(1.1); /* Firefox */
+    -webkit-transform : scale(1.1); /* Chrome - Safari */
+    -o-transform : scale(1.1); /* Opera */
+    -ms-transform : scale(1.1); /* IE9 */
+  }
+/*Header Cabeza*/
 
-body{
-    font-family: 'open sans';
-}
-.Contenedor{
-    padding: 30px;
-    width: 90%;
-    max-width: 1000px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+.Textos-Cabeza{
+    padding-top: 200px;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
-}
-.Titulo{
-    padding: 30px;
-    color:black;
-    font-size: 30px;
-    text-align: center;
-}
-/*Header Cabeza*/
-header{
     width: 100%;
     height: 620px;
     background: linear-gradient(to right, #c8dde24f, #2193b034),url(../img/Portada.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
-.Textos-Cabeza{
-    padding-top: 200px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
 }
 .Textos-Cabeza .texto h1{
     padding-top: 25%;
@@ -46,116 +36,43 @@ header{
 .Textos-Cabeza{
     font-family: 'Courier New', Courier, monospace;
 }
+/*
 .Textos-Cabeza .logo{
     height: 300px;
     width: 300px;
 }
-nav{
-    float: right;
-    background: rgba(160,81,0, 0.616);
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+*/
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100000;
 }
-nav ul{
-    list-style: none;
-    overflow: hidden;
+
+.whatsapp-icon {
+  margin-top:13px;
 }
-nav ul li {
-    float: right;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
-nav ul li a{
-    display: block;
-    padding: 20px;
-    color: rgb(252,250, 255);
-    text-decoration: none;
-}
-.imgSomos{
-    width: 30%;
-}
-.Contenedor h3{
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    padding-left: 5px;
-}
-.Servicio{
-    background-color:  #CAB08F;
-}
-.Contenedor-Servicios{
-    display: flex;
-    justify-content: space-evenly;
-}
-.imgServ{
-	 width: 50%;
-}
-.Contenedor-Servicios h3{
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    padding-left: 5px;
-}
-.Contenedor-Menu_y_Platillos{
-    display: flex;
-   justify-content: center
-}
-.imgMenu{
-	width: 20%;
-}
-.imgMenu2{	
-    border:2px solid;
-    color: blue;
-    padding: 15px 15px;
-    text-decoration: none; 
-    display: flex;
-    flex-wrap:wrap;
-    align-content: space-between;
-    width: 50%;
-}
- .Contenedor-Menu_y_Platillos h3{	 
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    padding-left: 5px;
-	display:flex;
-	flex-wrap:wrap;
-	align-content:center;
-}
-.Contenedor-Ubicacion{
-    display: block;
-    justify-content: center;
-}
-.Ubicacion{
-    text-align: center;
-}
-.Contenedor-Ubicacion h3{
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    padding-left: 5px;
-}
-.Contenedor-Contacto{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid brown;
-	flex-direction: column;
-    border: none;
-	margin-bottom: 20px;
-    text-align: center;
-}
-.Contenedor-Contacto h4{
-    color: black;
-    border-bottom: 3px solid blue;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-	border: none;
-}
-.Contenedor-Contacto p{
-    color: black;
-    padding-bottom: 20px;
+.Contenedor-Ubicacion {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 45%; 
 }
