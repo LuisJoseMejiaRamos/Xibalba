@@ -1,6 +1,23 @@
-.Contenedor-Quienes-Somos, .Contenedor-Menu{
+/*=====================================
+=            Quienes somos            =
+=====================================*/
+
+.Contenedor-Quienes-Somos{
+background-color:  #CAB08F;
+}
+
+/*=====================================
+=            Menu                     =
+=====================================*/
+
+ .Contenedor-Menu{
     background-color:  #CAB08F;
 }
+
+/*=====================================
+=            Zoom                     =
+=====================================*/
+
 .zoom{
     transition: 1s ease;
      -moz-transition: 1s ease; /* Firefox */
@@ -14,7 +31,10 @@
     -o-transform : scale(1.1); /* Opera */
     -ms-transform : scale(1.1); /* IE9 */
   }
-/*Header Cabeza*/
+
+/*=====================================
+=            Header-Cabeza            =
+=====================================*/
 
 .Textos-Cabeza{
     padding-top: 200px;
@@ -27,21 +47,16 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
 }
 .Textos-Cabeza .texto h1{
     padding-top: 25%;
     margin: auto;
-    font-size: 50px;
 }
-.Textos-Cabeza{
-    font-family: 'Courier New', Courier, monospace;
-}
-/*
-.Textos-Cabeza .logo{
-    height: 300px;
-    width: 300px;
-}
-*/
+
+/*================================
+=            Whatsapp            =
+================================*/
 
 .whatsapp {
   position:fixed;
@@ -56,10 +71,14 @@
   font-size:30px;
   z-index:100000;
 }
-
 .whatsapp-icon {
   margin-top:13px;
 }
+
+/*=================================
+=     Ubicacion            =
+=================================*/
+
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -75,4 +94,40 @@
   width: 100%;
   overflow: hidden;
   padding-top: 45%; 
+}
+
+/*================================
+=            Carrusel            =
+================================*/
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
 }
